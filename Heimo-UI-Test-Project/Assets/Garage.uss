@@ -57,7 +57,13 @@
     height: 56px;
     background-image: url("project://database/Assets/Sprites/GoldenCoin.png?fileID=1486534941499973156&guid=f4a9d6d69e063364c97f8a690e1bb2ac&type=3#GoldenCoin_0");
     left: auto;
-    right: 138px;
+    right: 140px;
+}
+
+.body__imageKart {
+    background-image: url("project://database/Assets/Sprites/Kart.png?fileID=-1288307076524906303&guid=5691d0dde59148346910a9dd776b0ebc&type=3#Kart_0");
+    width: 800px;
+    height: 750px;
 }
 
 .header__buttons {
@@ -119,6 +125,10 @@
     width: 30px;
     height: 46px;
     font-size: 14px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
 }
 
 .header__sectionTitle {
@@ -137,4 +147,142 @@
     font-size: 56px;
     -unity-font-style: bold;
     height: auto;
+}
+
+.body {
+    background-color: rgba(0, 0, 0, 0.72);
+    height: 90%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.body__sectionMenu {
+    padding-left: 50px;
+    width: auto;
+    height: auto;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    justify-content: space-around;
+}
+
+.body__buttonsMenu {
+    width: 124px;
+    height: 124px;
+    background-image: url("project://database/Assets/Sprites/BackgroundButton.png?fileID=-4724480418260579061&guid=bbb41ca0747c48e4abfc978aa38e3187&type=3#BackgroundButton_0");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.body__buttonsMenu:focus {
+    width: 124px;
+    height: 124px;
+    background-image: url("project://database/Assets/Sprites/BackgroundButtonClicked.png?fileID=-7318156260396034371&guid=f4e43d9357f2f3b41ab50ca795fc2d1f&type=3#BackgroundButtonClicked_0");
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    transition-property: background-image;
+    transition-timing-function: ease-in-elastic;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.body__iconButtonSkins {
+    background-image: url("project://database/Assets/Sprites/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
+    width: 88px;
+    height: auto;
+}
+
+.body__iconButtonColor {
+    background-image: url("project://database/Assets/Sprites/IconColors.png?fileID=2642429518568763794&guid=5057651921d60964096b851ccd95b01c&type=3#IconColors_0");
+    width: 70px;
+    height: auto;
+}
+
+.body__iconButtonWheels {
+    background-image: url("project://database/Assets/Sprites/IconWheels.png?fileID=3911956757621918206&guid=c091cb2748110734aa8312d0a670d634&type=3#IconWheels_0");
+    width: 77px;
+    height: auto;
+}
+
+.body__iconButtonAccessories {
+    background-image: url("project://database/Assets/Sprites/IconAccessories.png?fileID=3730146940087944093&guid=0f1c0e35bf0f50b468632253852587bb&type=3#IconAccessories_0");
+    width: 85px;
+    height: auto;
+}
+
+.body__iconButtonBumper {
+    background-image: url("project://database/Assets/Sprites/IconBumper.png?fileID=8058511527738388267&guid=8d40082e3641f7b46892775a4c2f3615&type=3#IconBumper_0");
+    width: 96px;
+    height: 45px;
+}
+
+.body__iconButtonSpoiler {
+    background-image: url("project://database/Assets/Sprites/IconSpoiler.png?fileID=5196973062123021083&guid=bc93c30be1ca75b43b1ed308a41cb03d&type=3#IconSpoiler_0");
+    width: 82px;
+    height: 82px;
+}
+
+.body__containerButtonsKart {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.body__buttonKart {
+    background-image: url("project://database/Assets/Sprites/BackgroundKartButton.png?fileID=8358758772054017279&guid=42e9489ae8011404c95d61f71bdd8bdf&type=3#BackgroundKartButton_0");
+    width: 162px;
+    height: 162px;
+    justify-content: center;
+    align-items: center;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.body__iconKart {
+    width: 107px;
+    background-image: url("project://database/Assets/Sprites/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
+    height: 66px;
+}
+
+.body__buttonDriver {
+    background-color: rgb(14, 14, 14);
+    width: 152px;
+    height: 152px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.body__iconDriver {
+    background-image: url("project://database/Assets/Sprites/IconDriver.png?fileID=2800000&guid=581a4388342c4c846b2685ba354691fa&type=3#IconDriver");
+    width: 74px;
+    height: 72px;
 }

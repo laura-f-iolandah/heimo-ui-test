@@ -22,5 +22,47 @@
                 </engine:VisualElement>
             </engine:VisualElement>
         </engine:VisualElement>
+        <engine:VisualElement name="body" class="body" style="flex-grow: 0;">
+            <engine:VisualElement name="sectionMenu" class="body__sectionMenu" style="flex-grow: 0;">
+                <engine:Button name="buttonSkins" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconSkins" class="body__iconButtonSkins" style="flex-grow: 1;" />
+                    <engine:Label text="Skins" name="labelSkins" />
+                </engine:Button>
+                <engine:Button name="buttonColor" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconColor" class="body__iconButtonColor" style="flex-grow: 1;" />
+                    <engine:Label text="Color" name="labelColor" />
+                </engine:Button>
+                <engine:Button name="buttonWheels" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconWheels" class="body__iconButtonWheels" style="flex-grow: 1;" />
+                    <engine:Label text="Wheels" name="labelWheels" />
+                </engine:Button>
+                <engine:Button name="buttonAccessories" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconAccessories" class="body__iconButtonAccessories" style="flex-grow: 1;" />
+                    <engine:Label text="Accessories" name="labelAccessories" style="position: relative;" />
+                </engine:Button>
+                <engine:Button name="buttonBumper" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconBumper" class="body__iconButtonSkins body__iconButtonBumper" style="flex-grow: 1;" />
+                    <engine:Label text="Bumper" name="labelBumper" />
+                </engine:Button>
+                <engine:Button name="buttonSpoiler" class="body__buttonsMenu" style="background-color: rgba(188, 188, 188, 0);">
+                    <engine:VisualElement name="iconSpoiler" class="body__iconButtonSkins body__iconButtonSpoiler" style="flex-grow: 1; width: 82px;" />
+                    <engine:Label text="Spoiler" name="labelSpoiler" />
+                </engine:Button>
+            </engine:VisualElement>
+            <engine:VisualElement name="sectionKart" style="flex-grow: 0;">
+                <engine:VisualElement name="imageKart" class="body__imageKart" style="flex-grow: 0;" />
+                <engine:VisualElement name="containerButtonsKart" class="body__containerButtonsKart" style="flex-grow: 1;">
+                    <engine:Button name="buttonKart" class="body__buttonKart" style="background-color: rgba(188, 188, 188, 0);">
+                        <engine:VisualElement name="iconKart" class="body__iconKart" style="flex-grow: 0;" />
+                        <engine:Label text="Label" name="labelButtonKart" />
+                    </engine:Button>
+                    <engine:Button text="&#10;" name="buttonDriver" class="body__buttonDriver">
+                        <engine:VisualElement name="iconDriver" class="body__iconDriver" style="flex-grow: 0;" />
+                        <engine:Label text="Driver" name="labelDriver" />
+                    </engine:Button>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="sectionOptions" style="flex-grow: 0;" />
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>
