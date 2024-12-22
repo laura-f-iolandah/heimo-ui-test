@@ -1,0 +1,140 @@
+.container__garage {
+    background-image: url("project://database/Assets/Sprites/Background.png?fileID=-1955448553306655712&guid=da4f87a354fd1e443a92e03177d9d17f&type=3#Background_0");
+}
+
+.header {
+    background-image: url("project://database/Assets/Sprites/BackgroundHeader.png?fileID=-1380951127260381924&guid=2a64cf9bd79d1344da4aac4c5609aeb2&type=3#BackgroundHeader_0");
+    height: 110px;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    padding-left: 56px;
+    padding-right: 56px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header__sectionButtons {
+    background-color: rgba(68, 224, 31, 0);
+    width: auto;
+    height: 85%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header__containerButtons {
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(60, 40, 40, 0);
+}
+
+.header__containerTickets {
+    flex-direction: row;
+    background-color: rgba(29, 229, 81, 0);
+    align-items: center;
+    height: 56px;
+}
+
+.header__containerCoins {
+    flex-direction: row;
+    background-color: rgba(238, 30, 30, 0);
+    align-items: center;
+    margin-left: 40px;
+}
+
+.header__imageTicket {
+    width: 50px;
+    height: 70px;
+    background-image: url("project://database/Assets/Sprites/Ticket1.png?fileID=-3958043512294279959&guid=64a2118c1ca46c643be351658b9e2fa4&type=3#Ticket1_0");
+    left: auto;
+    right: 130px;
+}
+
+.header__imageCoin {
+    width: 53px;
+    height: 56px;
+    background-image: url("project://database/Assets/Sprites/GoldenCoin.png?fileID=1486534941499973156&guid=f4a9d6d69e063364c97f8a690e1bb2ac&type=3#GoldenCoin_0");
+    left: auto;
+    right: 138px;
+}
+
+.header__buttons {
+    border-left-color: rgb(18, 142, 53);
+    border-right-color: rgb(18, 142, 53);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgb(18, 142, 53);
+    background-color: rgba(21, 235, 81, 0.93);
+    color: rgb(18, 142, 53);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-width: 2px;
+    border-left-width: 0.5px;
+    border-right-width: 0.5px;
+    width: 36px;
+    height: 36px;
+    left: 165px;
+    right: auto;
+    bottom: auto;
+    font-size: 36px;
+    top: 3px;
+    position: absolute;
+}
+
+.header__labels {
+    background-color: rgb(0, 0, 0);
+    width: 142px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    font-size: 36px;
+    padding-left: 26px;
+    padding-right: 26px;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: initial;
+    padding-bottom: initial;
+    justify-content: center;
+    left: 42px;
+}
+
+.header__buttonHome {
+    background-image: url("project://database/Assets/Sprites/Home.png?fileID=4433539168102762298&guid=2508386af63b3f5489e77736afdbed71&type=3#Home_0");
+    width: 46px;
+    height: 46px;
+    margin-left: 60px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.header__backButton {
+    background-image: url("project://database/Assets/Sprites/Arrow.png?fileID=-4346244404228752641&guid=25a38fac361ee734da4a82ea9534e54f&type=3#Arrow_0");
+    width: 30px;
+    height: 46px;
+    font-size: 14px;
+}
+
+.header__sectionTitle {
+    flex-direction: row;
+    height: 85%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 368px;
+    justify-content: space-between;
+}
+
+.header__Title {
+    align-items: center;
+    justify-content: center;
+    -unity-text-align: middle-center;
+    font-size: 56px;
+    -unity-font-style: bold;
+    height: auto;
+}

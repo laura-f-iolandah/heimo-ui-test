@@ -1,9 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd"
->
-    
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Garage.uss?fileID=7433441132597879392&amp;guid=53bb6a61db171fa42951da10883d949f&amp;type=3#Garage" />
+    <engine:VisualElement name="containerGarage" class="container__garage" style="flex-grow: 0; width: 100%; height: 100%;">
+        <engine:VisualElement name="header" class="header" style="flex-grow: 0;">
+            <engine:VisualElement name="sectionTitle" class="header__sectionTitle" style="flex-grow: 0;">
+                <engine:Button name="buttonBack" class="header__arrowButton header__backButton" style="background-color: rgba(188, 188, 188, 0);" />
+                <engine:Label text="GARAGE" name="titleHeader" class="header__Title" />
+            </engine:VisualElement>
+            <engine:VisualElement name="sectionButtons" class="header__sectionButtons" style="flex-grow: 0;">
+                <engine:VisualElement name="containerButtons" class="header__containerButtons" style="flex-grow: 0;">
+                    <engine:VisualElement name="containerTickets" class="header__containerTickets" style="flex-grow: 1;">
+                        <engine:Label text="30&#10;" name="labelTickets" class="header__labels" />
+                        <engine:VisualElement name="imageTicket" class="header__imageTicket" style="flex-grow: 1;" />
+                        <engine:Button text="+" name="buttonTickets" class="header__buttons" style="bottom: auto;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="containerCoins" class="header__containerCoins" style="flex-grow: 1;">
+                        <engine:Label text="3000&#10;" name="ladeblCoins" class="header__labels" />
+                        <engine:VisualElement name="imageCoin" class="header__imageCoin" style="flex-grow: 1;" />
+                        <engine:Button text="+" name="buttonCoins" class="header__buttons" style="bottom: auto;" />
+                    </engine:VisualElement>
+                    <engine:Button name="buttonHome" class="header__buttonHome" style="background-color: rgba(188, 188, 188, 0);" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
 </engine:UXML>
