@@ -1,288 +1,458 @@
 .container__garage {
+    width: 100%;
+    height: 100%;
     background-image: url("project://database/Assets/Sprites/Background.png?fileID=-1955448553306655712&guid=da4f87a354fd1e443a92e03177d9d17f&type=3#Background_0");
 }
 
 .header {
-    background-image: url("project://database/Assets/Sprites/BackgroundHeader.png?fileID=-1380951127260381924&guid=2a64cf9bd79d1344da4aac4c5609aeb2&type=3#BackgroundHeader_0");
-    height: 110px;
-    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
-    -unity-font-style: bold;
-    color: rgb(255, 255, 255);
+    height: auto;
+    background-color: rgba(87, 226, 65, 0);
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("project://database/Assets/Sprites/Header/BackgroundHeader.png?fileID=-1380951127260381924&guid=2a64cf9bd79d1344da4aac4c5609aeb2&type=3#BackgroundHeader_0");
     padding-left: 56px;
     padding-right: 56px;
-    justify-content: space-between;
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-text-outline-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 32px;
+}
+
+.header__sectionTitle {
+    width: auto;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__buttonBack {
+    width: 30px;
+    height: 46px;
+    background-image: url("project://database/Assets/Sprites/Header/Arrow.png?fileID=-4346244404228752641&guid=25a38fac361ee734da4a82ea9534e54f&type=3#Arrow_0");
+    margin-right: 56px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.header__titleHeader {
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    font-size: 56px;
+    -unity-text-outline-width: 0;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    word-spacing: 0;
 }
 
 .header__sectionButtons {
-    background-color: rgba(68, 224, 31, 0);
     width: auto;
-    height: 85%;
-    justify-content: center;
-    align-items: flex-end;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
 }
 
 .header__containerButtons {
     flex-direction: row;
-    width: auto;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: rgba(60, 40, 40, 0);
+    width: 388px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.header__containerTickets {
-    flex-direction: row;
-    background-color: rgba(29, 229, 81, 0);
-    align-items: center;
-    height: 56px;
-}
-
-.header__containerCoins {
-    flex-direction: row;
-    background-color: rgba(238, 30, 30, 0);
-    align-items: center;
-    margin-left: 40px;
-}
-
-.header__imageTicket {
-    width: 50px;
+.header__iconTicket {
+    background-image: url("project://database/Assets/Sprites/Header/Ticket1.png?fileID=-3958043512294279959&guid=64a2118c1ca46c643be351658b9e2fa4&type=3#Ticket1_0");
+    width: 44px;
     height: 70px;
-    background-image: url("project://database/Assets/Sprites/Ticket1.png?fileID=-3958043512294279959&guid=64a2118c1ca46c643be351658b9e2fa4&type=3#Ticket1_0");
+    position: absolute;
     left: auto;
-    right: 130px;
+    right: 128px;
+    bottom: auto;
+    top: auto;
 }
 
-.header__imageCoin {
+.header__iconCoin {
+    background-image: url("project://database/Assets/Sprites/Header/GoldenCoin.png?fileID=1486534941499973156&guid=f4a9d6d69e063364c97f8a690e1bb2ac&type=3#GoldenCoin_0");
     width: 53px;
     height: 56px;
-    background-image: url("project://database/Assets/Sprites/GoldenCoin.png?fileID=1486534941499973156&guid=f4a9d6d69e063364c97f8a690e1bb2ac&type=3#GoldenCoin_0");
+    position: absolute;
     left: auto;
-    right: 140px;
-}
-
-.body__imageKart {
-    background-image: url("project://database/Assets/Sprites/Kart.png?fileID=-1288307076524906303&guid=5691d0dde59148346910a9dd776b0ebc&type=3#Kart_0");
-    width: 800px;
-    height: 750px;
+    right: 135px;
+    bottom: auto;
+    top: auto;
 }
 
 .header__buttons {
-    border-left-color: rgb(18, 142, 53);
-    border-right-color: rgb(18, 142, 53);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgb(18, 142, 53);
-    background-color: rgba(21, 235, 81, 0.93);
-    color: rgb(18, 142, 53);
+    font-size: 36px;
+    background-color: rgb(21, 235, 81);
+    color: rgb(18, 117, 47);
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
-    border-bottom-width: 2px;
-    border-left-width: 0.5px;
-    border-right-width: 0.5px;
+    align-items: center;
+    justify-content: center;
     width: 36px;
     height: 36px;
-    left: 165px;
-    right: auto;
-    bottom: auto;
-    font-size: 36px;
-    top: 3px;
-    position: absolute;
-}
-
-.header__labels {
-    background-color: rgb(0, 0, 0);
-    width: 142px;
     -unity-text-align: middle-center;
     -unity-font-style: bold;
+    border-left-color: rgb(18, 117, 47);
+    border-right-color: rgb(18, 117, 47);
+    border-top-color: rgb(18, 117, 47);
+    border-bottom-color: rgb(18, 117, 47);
+    border-top-width: 0.5px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 3px;
+    padding-bottom: 8px;
+    position: absolute;
+    left: 125px;
+    bottom: 25px;
+    top: auto;
+}
+
+.header__buttons:focus {
+    border-left-color: rgba(21, 235, 81, 0);
+    border-right-color: rgba(21, 235, 81, 0);
+    border-top-color: rgba(21, 235, 81, 0);
+    border-bottom-color: rgba(21, 235, 81, 0);
+    border-top-width: 0.5px;
+    border-left-width: 1px;
+    border-bottom-width: 3px;
+    border-right-width: 1px;
+}
+
+.header__labelButtons {
+    color: rgb(255, 255, 255);
     font-size: 36px;
-    padding-left: 26px;
-    padding-right: 26px;
-    align-items: center;
+    -unity-font-style: bold;
+    background-color: rgb(0, 0, 0);
+    width: 154px;
+    -unity-text-align: upper-center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding-top: initial;
-    padding-bottom: initial;
-    justify-content: center;
-    left: 42px;
 }
 
 .header__buttonHome {
-    background-image: url("project://database/Assets/Sprites/Home.png?fileID=4433539168102762298&guid=2508386af63b3f5489e77736afdbed71&type=3#Home_0");
-    width: 46px;
+    width: 44px;
     height: 46px;
-    margin-left: 60px;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-}
-
-.header__backButton {
-    background-image: url("project://database/Assets/Sprites/Arrow.png?fileID=-4346244404228752641&guid=25a38fac361ee734da4a82ea9534e54f&type=3#Arrow_0");
-    width: 30px;
-    height: 46px;
-    font-size: 14px;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-}
-
-.header__sectionTitle {
-    flex-direction: row;
-    height: 85%;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    width: 368px;
-    justify-content: space-between;
-}
-
-.header__Title {
-    align-items: center;
-    justify-content: center;
-    -unity-text-align: middle-center;
-    font-size: 56px;
-    -unity-font-style: bold;
-    height: auto;
+    background-image: url("project://database/Assets/Sprites/Header/Home.png?fileID=4433539168102762298&guid=2508386af63b3f5489e77736afdbed71&type=3#Home_0");
+    margin-left: 70px;
 }
 
 .body {
-    background-color: rgba(0, 0, 0, 0.72);
-    height: 90%;
     width: 100%;
+    height: 100%;
     flex-direction: row;
+    padding-left: 48px;
+    padding-right: 72px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .body__sectionMenu {
-    padding-left: 50px;
-    width: auto;
-    height: auto;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    justify-content: space-around;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-.body__buttonsMenu {
+.body__labelButtonMenu {
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    color: rgb(255, 255, 255);
+    height: 24px;
+}
+
+.body__iconButtonMenu {
+    background-image: none;
+    width: 80px;
+    height: 64px;
+}
+
+.body__buttonMenu:focus {
+    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButtonClicked.png?fileID=-7318156260396034371&guid=f4e43d9357f2f3b41ab50ca795fc2d1f&type=3#BackgroundButtonClicked_0");
+}
+
+.body__buttonMenu {
     width: 124px;
     height: 124px;
-    background-image: url("project://database/Assets/Sprites/BackgroundButton.png?fileID=-4724480418260579061&guid=bbb41ca0747c48e4abfc978aa38e3187&type=3#BackgroundButton_0");
+    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButton.png?fileID=-4724480418260579061&guid=bbb41ca0747c48e4abfc978aa38e3187&type=3#BackgroundButton_0");
+    align-items: center;
+    justify-content: space-between;
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgba(0, 0, 0, 0);
-    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
-    -unity-font-style: bold;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.body__buttonsMenu:focus {
-    width: 124px;
-    height: 124px;
-    background-image: url("project://database/Assets/Sprites/BackgroundButtonClicked.png?fileID=-7318156260396034371&guid=f4e43d9357f2f3b41ab50ca795fc2d1f&type=3#BackgroundButtonClicked_0");
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
-    -unity-font-style: bold;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    justify-content: center;
-    transition-property: background-image;
-    transition-timing-function: ease-in-elastic;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
+.body__imageKartView {
+    background-image: url("project://database/Assets/Sprites/Kart.png?fileID=-1288307076524906303&guid=5691d0dde59148346910a9dd776b0ebc&type=3#Kart_0");
+    width: 637px;
+    height: 108px;
 }
 
-.body__iconButtonSkins {
-    background-image: url("project://database/Assets/Sprites/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
-    width: 88px;
-    height: auto;
+.body__sectionView {
+    margin-top: 52px;
 }
 
-.body__iconButtonColor {
-    background-image: url("project://database/Assets/Sprites/IconColors.png?fileID=2642429518568763794&guid=5057651921d60964096b851ccd95b01c&type=3#IconColors_0");
-    width: 70px;
-    height: auto;
+.body__buttonDriverView {
 }
 
-.body__iconButtonWheels {
-    background-image: url("project://database/Assets/Sprites/IconWheels.png?fileID=3911956757621918206&guid=c091cb2748110734aa8312d0a670d634&type=3#IconWheels_0");
-    width: 77px;
-    height: auto;
-}
-
-.body__iconButtonAccessories {
-    background-image: url("project://database/Assets/Sprites/IconAccessories.png?fileID=3730146940087944093&guid=0f1c0e35bf0f50b468632253852587bb&type=3#IconAccessories_0");
-    width: 85px;
-    height: auto;
-}
-
-.body__iconButtonBumper {
-    background-image: url("project://database/Assets/Sprites/IconBumper.png?fileID=8058511527738388267&guid=8d40082e3641f7b46892775a4c2f3615&type=3#IconBumper_0");
-    width: 96px;
-    height: 45px;
-}
-
-.body__iconButtonSpoiler {
-    background-image: url("project://database/Assets/Sprites/IconSpoiler.png?fileID=5196973062123021083&guid=bc93c30be1ca75b43b1ed308a41cb03d&type=3#IconSpoiler_0");
-    width: 82px;
-    height: 82px;
-}
-
-.body__containerButtonsKart {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    -unity-font-style: bold;
-}
-
-.body__buttonKart {
-    background-image: url("project://database/Assets/Sprites/BackgroundKartButton.png?fileID=8358758772054017279&guid=42e9489ae8011404c95d61f71bdd8bdf&type=3#BackgroundKartButton_0");
+.body__buttonKartView {
     width: 162px;
     height: 162px;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-top-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 6px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body__iconKartView {
+    width: 100px;
+    height: 64px;
+    background-image: url("project://database/Assets/Sprites/Menu/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
+    -unity-font-definition: initial;
+}
+
+.body__buttonKartView:focus {
+    background-image: url("project://database/Assets/Sprites/BackgroundKartButton.png?fileID=8358758772054017279&guid=42e9489ae8011404c95d61f71bdd8bdf&type=3#BackgroundKartButton_0");
+}
+
+.body__containerButtonsView {
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: auto;
 }
 
-.body__iconKart {
-    width: 107px;
-    background-image: url("project://database/Assets/Sprites/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
-    height: 66px;
-}
-
-.body__buttonDriver {
-    background-color: rgb(14, 14, 14);
+.body__buttonDriverView {
     width: 152px;
     height: 152px;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgb(14, 14, 14);
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
     align-items: center;
     justify-content: center;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
 }
 
-.body__iconDriver {
-    background-image: url("project://database/Assets/Sprites/IconDriver.png?fileID=2800000&guid=581a4388342c4c846b2685ba354691fa&type=3#IconDriver");
+.body__iconDriverView {
     width: 74px;
-    height: 72px;
+    height: 74px;
+    background-image: url("project://database/Assets/Sprites/IconDriver.png?fileID=7714974108243375816&guid=581a4388342c4c846b2685ba354691fa&type=3#IconDriver_0");
+}
+
+.body__labelView {
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    height: auto;
+}
+
+.body__sectionWindow {
+}
+
+.body__containerOptions {
+    width: auto;
+    height: auto;
+    padding-left: 52px;
+    padding-bottom: 52px;
+    border-top-width: 6px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 6px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.39);
+    padding-right: 48px;
+}
+
+.body__containerCategories {
+    flex-direction: row;
+    padding-right: 0;
+    margin-right: 0;
+    width: auto;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 74px;
+}
+
+.body__buttonCategory {
+    background-color: rgb(136, 136, 136);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    padding-left: 18px;
+    padding-right: 18px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.body__buttonCategory:focus {
+    background-image: url("project://database/Assets/Sprites/Header/BackgroundHeader.png?fileID=-1380951127260381924&guid=2a64cf9bd79d1344da4aac4c5609aeb2&type=3#BackgroundHeader_0");
+}
+
+.body__titleOptions {
+    font-size: 48px;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding-left: 34px;
+    padding-right: 34px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    position: absolute;
+    top: auto;
+    left: 38px;
+    right: auto;
+    bottom: 438px;
+}
+
+.body__sectionOptions {
+    padding-top: 94px;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 70px;
+}
+
+.body__cardOption {
+    width: 224px;
+    height: 294px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 8px;
+    border-left-width: 4px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    background-color: rgb(0, 124, 255);
+}
+
+.body__imageOption {
+    background-image: url("project://database/Assets/Sprites/Options/KartSmall.png?fileID=-5910836987029831756&guid=6f01e5952f99aa041b32317390aad7d8&type=3#KartSmall_0");
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    position: relative;
+    background-size: contain;
+}
+
+.body__buttonOption {
+    background-color: rgb(243, 198, 35);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    margin-left: 48px;
+    margin-right: 48px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    -unity-text-outline-width: 3px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute;
+    top: 212px;
+}
+
+.body__tAAgOptions {
+    font-size: 12px;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding-left: 24px;
+    padding-right: 24px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    position: absolute;
+    top: 20px;
+    left: -2px;
+    right: auto;
+    bottom: auto;
 }
