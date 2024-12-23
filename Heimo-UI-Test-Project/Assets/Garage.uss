@@ -153,6 +153,9 @@
     border-bottom-left-radius: 20px;
 }
 
+.body__buttonMenu {
+}
+
 .header__buttonHome {
     width: 44px;
     height: 46px;
@@ -192,16 +195,12 @@
     height: 64px;
 }
 
-.body__buttonMenu:focus {
-    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButtonClicked.png?fileID=-7318156260396034371&guid=f4e43d9357f2f3b41ab50ca795fc2d1f&type=3#BackgroundButtonClicked_0");
-}
-
 .body__buttonMenu {
     width: 124px;
     height: 124px;
-    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButton.png?fileID=-4724480418260579061&guid=bbb41ca0747c48e4abfc978aa38e3187&type=3#BackgroundButton_0");
+    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButton.png?fileID=-4724480418260579061&guid=ab0ab70799097ee41bb4a9984d1661c8&type=3#BackgroundButton_0");
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-left-color: rgba(0, 0, 0, 0);
     border-right-color: rgba(0, 0, 0, 0);
     border-top-color: rgba(0, 0, 0, 0);
@@ -245,7 +244,7 @@
 .body__iconKartView {
     width: 100px;
     height: 64px;
-    background-image: url("project://database/Assets/Sprites/Menu/IconKart.png?fileID=7059505929517611891&guid=23bce4a47ee0b4542a16ee916bfff48d&type=3#IconKart_0");
+    background-image: url("project://database/Assets/Sprites/Menu/IconKart.png?fileID=7059505929517611891&guid=62548ddb513e19a4caf286c9929a9879&type=3#IconKart_0");
     -unity-font-definition: initial;
 }
 
@@ -322,7 +321,7 @@
     width: auto;
     padding-left: 0;
     margin-left: 0;
-    margin-top: 74px;
+    margin-top: 0;
 }
 
 .body__buttonCategory {
@@ -366,11 +365,11 @@
     border-bottom-left-radius: 40px;
     border-top-width: 5px;
     border-bottom-width: 5px;
-    position: absolute;
-    top: auto;
-    left: 38px;
-    right: auto;
-    bottom: 438px;
+    position: relative;
+    top: -48px;
+    left: auto;
+    right: 312px;
+    bottom: 0;
 }
 
 .body__sectionOptions {
@@ -378,6 +377,7 @@
     padding-left: 0;
     background-color: rgba(0, 0, 0, 0);
     margin-left: 70px;
+    align-items: center;
 }
 
 .body__cardOption {
@@ -436,7 +436,7 @@
     top: 212px;
 }
 
-.body__tAAgOptions {
+.body__tagOptions {
     font-size: 12px;
     -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
     -unity-font-style: bold;
@@ -455,4 +455,9 @@
     left: -2px;
     right: auto;
     bottom: auto;
+}
+
+.body__containerCardOptions {
+    margin-top: 28px;
+    height: 616px;
 }

@@ -28,26 +28,6 @@
                     <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
                     <engine:Label text="Label" class="body__labelButtonMenu" />
                 </engine:Button>
-                <engine:Button class="body__buttonMenu">
-                    <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
-                    <engine:Label text="Label" class="body__labelButtonMenu" />
-                </engine:Button>
-                <engine:Button class="body__buttonMenu">
-                    <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
-                    <engine:Label text="Label" class="body__labelButtonMenu" style="height: 20px;" />
-                </engine:Button>
-                <engine:Button class="body__buttonMenu">
-                    <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
-                    <engine:Label text="Label" class="body__labelButtonMenu" />
-                </engine:Button>
-                <engine:Button class="body__buttonMenu">
-                    <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
-                    <engine:Label text="Label" class="body__labelButtonMenu" />
-                </engine:Button>
-                <engine:Button class="body__buttonMenu">
-                    <engine:VisualElement class="body__iconButtonMenu" style="flex-grow: 1;" />
-                    <engine:Label text="Label" class="body__labelButtonMenu" />
-                </engine:Button>
             </engine:VisualElement>
             <engine:VisualElement name="sectionView" class="body__containerView body__sectionView" style="flex-grow: 1;">
                 <engine:VisualElement name="imageKartView" class="body__imageKartView" style="flex-grow: 1;" />
@@ -64,7 +44,7 @@
             </engine:VisualElement>
             <engine:VisualElement name="sectionOptions" class="body__sectionOptions" style="flex-grow: 1;">
                 <engine:VisualElement name="containerOptions" class="body__containerWindow body__containerOptions" style="flex-grow: 0; justify-content: center; align-items: center;">
-                    <engine:Label text="SKINS" name="titleOptions" class="body__titleOptions" style="bottom: 438px;" />
+                    <engine:Label text="SKINS" name="titleOptions" class="body__titleOptions" style="bottom: auto;" />
                     <engine:VisualElement name="containerCategories" class="body__containerCategories" style="flex-grow: 1;">
                         <engine:Button text="ALL" class="body__buttonCategory" />
                         <engine:Button text="COMMON" class="body__buttonCategory" />
@@ -75,10 +55,10 @@
                         <engine:Button text="SPECIAL" class="body__buttonCategory" />
                     </engine:VisualElement>
                     <engine:ScrollView name="containerCards" />
-                    <engine:ScrollView name="containerCardsOptions" style="width: 100%;">
+                    <engine:ScrollView name="containerCardsOptions" class="body__containerCardOptions" style="width: 100%;">
                         <engine:VisualElement name="cardOption" class="body__cardOption" style="flex-grow: 0;">
                             <engine:VisualElement name="imageOption" class="body__imageOption" style="flex-grow: 1;" />
-                            <engine:Label text="LEGENDARY" name="titleOptions" class="body__tAAgOptions" style="bottom: auto;" />
+                            <engine:Label text="LEGENDARY" name="tagOptions" class="body__tAAgOptions body__tagOptions" style="bottom: auto;" />
                             <engine:Button text="EQUIP" name="buttonOption" class="body__buttonOption" />
                         </engine:VisualElement>
                     </engine:ScrollView>
