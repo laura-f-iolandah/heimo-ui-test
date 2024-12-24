@@ -129,17 +129,6 @@
     top: auto;
 }
 
-.header__buttons:focus {
-    border-left-color: rgba(21, 235, 81, 0);
-    border-right-color: rgba(21, 235, 81, 0);
-    border-top-color: rgba(21, 235, 81, 0);
-    border-bottom-color: rgba(21, 235, 81, 0);
-    border-top-width: 0.5px;
-    border-left-width: 1px;
-    border-bottom-width: 3px;
-    border-right-width: 1px;
-}
-
 .header__labelButtons {
     color: rgb(255, 255, 255);
     font-size: 36px;
@@ -151,9 +140,6 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-
-.body__buttonMenu {
 }
 
 .header__buttonHome {
@@ -198,7 +184,7 @@
 .body__buttonMenu {
     width: 124px;
     height: 124px;
-    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButton.png?fileID=-4724480418260579061&guid=ab0ab70799097ee41bb4a9984d1661c8&type=3#BackgroundButton_0");
+    background-image: url("project://database/Assets/Sprites/Menu/BackgroundButton.png?fileID=-4724480418260579061&guid=c46b328f31cfa9447a42cc58a1fe5e93&type=3#BackgroundButton_0");
     align-items: center;
     justify-content: space-around;
     border-left-color: rgba(0, 0, 0, 0);
@@ -216,9 +202,6 @@
 
 .body__sectionView {
     margin-top: 52px;
-}
-
-.body__buttonDriverView {
 }
 
 .body__buttonKartView {
@@ -244,7 +227,7 @@
 .body__iconKartView {
     width: 100px;
     height: 64px;
-    background-image: url("project://database/Assets/Sprites/Menu/IconKart.png?fileID=7059505929517611891&guid=62548ddb513e19a4caf286c9929a9879&type=3#IconKart_0");
+    background-image: resource('Sprites/Menu/IconKart');
     -unity-font-definition: initial;
 }
 
@@ -256,8 +239,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .body__buttonDriverView {
@@ -288,9 +273,6 @@
     -unity-font-style: bold;
     color: rgb(255, 255, 255);
     height: auto;
-}
-
-.body__sectionWindow {
 }
 
 .body__containerOptions {
@@ -347,10 +329,6 @@
     color: rgb(255, 255, 255);
 }
 
-.body__buttonCategory:focus {
-    background-image: url("project://database/Assets/Sprites/Header/BackgroundHeader.png?fileID=-1380951127260381924&guid=2a64cf9bd79d1344da4aac4c5609aeb2&type=3#BackgroundHeader_0");
-}
-
 .body__titleOptions {
     font-size: 48px;
     -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
@@ -396,16 +374,9 @@
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
     background-color: rgb(0, 124, 255);
-}
-
-.body__imageOption {
-    background-image: url("project://database/Assets/Sprites/Options/KartSmall.png?fileID=-5910836987029831756&guid=6f01e5952f99aa041b32317390aad7d8&type=3#KartSmall_0");
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    position: relative;
-    background-size: contain;
+    margin-bottom: 30px;
+    margin-right: 12px;
+    margin-left: 5px;
 }
 
 .body__buttonOption {
@@ -433,7 +404,23 @@
     padding-left: 24px;
     padding-right: 24px;
     position: absolute;
-    top: 212px;
+    top: 215px;
+}
+
+.body__labelOption {
+    font-size: 20px;
+    position: absolute;
+    bottom: 215px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -unity-font-definition: url("project://database/Assets/Fonts/VarelaRound.asset?fileID=11400000&guid=116f13dc70396d94f816f67606d4c436&type=2#VarelaRound");
+    -unity-font-style: bold;
 }
 
 .body__tagOptions {
@@ -457,7 +444,47 @@
     bottom: auto;
 }
 
-.body__containerCardOptions {
-    margin-top: 28px;
-    height: 616px;
+.body__containerCardsOptions {
+    margin-top: 0;
+    height: 618px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(229, 53, 53, 0.75);
+    align-items: flex-start;
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.body__scrollCardsOptions {
+    height: 618px;
+    margin-top: 24px;
+    width: 99%;
+}
+
+.body__imageOption {
+    background-size: contain;
+}
+
+.body__cardOptionColor {
+    background-size: 224px 228px;
+    background-color: rgba(55, 55, 55, 0);
+    width: 224px;
+    height: 228px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-right: 12px;
 }

@@ -1,11 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class CategoriesScript
 {
-    private VisualElement containerCategories;
+    private readonly VisualElement containerCategories;
     private Button currentSelectedButton;
+
+    public event System.Action<string> OnCategorySelected;
 
     private readonly Category[] categoriesList =
     {
@@ -18,6 +19,9 @@ public class CategoriesScript
         new Category { labelButton = "SPECIAL" }
     };
 
+    private const string DefaultButtonClass = "body__buttonCategory";
+    private readonly string initialSelectedCategory = "ALL";
+
     public CategoriesScript(VisualElement categoriesContainer)
     {
         containerCategories = categoriesContainer;
@@ -25,47 +29,72 @@ public class CategoriesScript
 
     public void InitializeCategoriesMenu()
     {
-
-        foreach (var item in categoriesList)
+        foreach (var category in categoriesList)
         {
-            containerCategories.Add(CreateButtonCategory(item));
+            var button = CreateCategoryButton(category);
+            containerCategories.Add(button);
+
+            if (category.labelButton == initialSelectedCategory)
+                HandleCategoryButtonClick(button);
+        }
+
+        if (currentSelectedButton == null && containerCategories.childCount > 0)
+        {
+            HandleCategoryButtonClick(containerCategories.ElementAt(0) as Button);
         }
     }
 
-    private Button CreateButtonCategory(Category item)
+    private Button CreateCategoryButton(Category category)
     {
-        var newButton = new Button
+        var button = new Button
         {
-            name = "buttonCategory" + item.labelButton
-        };
-        newButton.AddToClassList("body__buttonCategory");
+            name = category.labelButton,
+            text = category.labelButton
+        }.ApplyClass(DefaultButtonClass);
 
-        newButton.text = item.labelButton;
-
-        newButton.clicked += () => HandleMenuButtonClick(newButton);
-
-        return newButton;
+        button.clicked += () => HandleCategoryButtonClick(button);
+        return button;
     }
 
-    private void HandleMenuButtonClick(Button clickedButton)
+    private void HandleCategoryButtonClick(Button clickedButton)
     {
+        Color backgroundColor = clickedButton.resolvedStyle.backgroundColor;
+
         if (currentSelectedButton != null)
         {
             currentSelectedButton.style.backgroundImage = StyleKeyword.Null;
+            currentSelectedButton.style.backgroundColor = new StyleColor(backgroundColor);
         }
 
-        SetBackgroundImage(clickedButton, "Sprites/Menu/BackgroundHeader");
+        SetBackgroundImage(clickedButton, "Sprites/Categories/BackgroundHeader");
+
+        clickedButton.style.backgroundColor = new StyleColor(Color.clear);
+
         currentSelectedButton = clickedButton;
+
+        OnCategorySelected?.Invoke(clickedButton.text);
     }
 
     private void SetBackgroundImage(VisualElement element, string imagePath)
     {
         var texture = Resources.Load<Texture2D>(imagePath);
-
         element.style.backgroundImage = new StyleBackground(texture);
-
     }
 
+    public string GetSelectedCategory()
+    {
+        return currentSelectedButton?.text ?? initialSelectedCategory;
+    }
+}
+
+
+public static class VisualElementHelper
+{
+    public static T ApplyClass<T>(this T element, string className) where T : VisualElement
+    {
+        element.AddToClassList(className);
+        return element;
+    }
 }
 
 [System.Serializable]
